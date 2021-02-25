@@ -17,7 +17,7 @@ public interface SirvClient {
 
     FilesClient getFilesClient();
 
-    ApiTokenResponse getToken();
+    ApiTokenResponse getToken(boolean forceNew);
 
     Map<String, String> getRequestHeaders(boolean forceNew);
 }

@@ -69,15 +69,16 @@ public class SirvClientImpl implements SirvClient {
         return filesClient != null ? filesClient : (filesClient = new FilesClientImpl(this, restClient, host));
     }
 
-    public ApiTokenResponse getToken() {
-        ApiTokenRequest request = new ApiTokenRequest(clientId, clientSecret);
-        return restClient.doPost(loginUrl, request, ApiTokenResponse.class, Collections.EMPTY_MAP);
+    public ApiTokenResponse getToken(boolean forceNew) {
+        if (forceNew || token == null) {
+            ApiTokenRequest request = new ApiTokenRequest(clientId, clientSecret);
+            token = restClient.doPost(loginUrl, request, ApiTokenResponse.class, Collections.EMPTY_MAP);
+        }
+        return token;
     }
 
     public Map<String, String> getRequestHeaders(boolean forceNew) {
-        if (forceNew || token == null) {
-            token = getToken();
-        }
+        ApiTokenResponse token = getToken(forceNew);
         Map<String, String> headers = new HashMap<>();
 
         headers.put(AUTHORIZATION_HEADER_KEY, AUTHORIZATION_HEADER_VALUE_PREFIX + token.getToken());

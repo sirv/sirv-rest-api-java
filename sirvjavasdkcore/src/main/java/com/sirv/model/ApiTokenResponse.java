@@ -1,11 +1,13 @@
 package com.sirv.model;
 
+import com.auth0.jwt.JWT;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyDescription;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.Date;
 import java.util.List;
 
 @Getter
@@ -32,4 +34,8 @@ public class ApiTokenResponse {
     @JsonProperty("scope")
     @JsonPropertyDescription("API scopes")
     private List<String> scope;
+
+    public boolean isAlive() {
+        return JWT.decode(token).getExpiresAt().after(new Date());
+    }
 }
