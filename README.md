@@ -4,7 +4,7 @@ The Sirv REST API let's you perform more than 40 actions on your Sirv account, s
 
 REST API Documentation: https://apidocs.sirv.com/#getting-started
 
-# Get started
+## Get started
 
 To use this Java SDK, specify it as a project dependency in Maven:
  
@@ -18,7 +18,7 @@ To use this Java SDK, specify it as a project dependency in Maven:
 </dependencies>
 ```
 
-# Spring MVC usage example
+## Spring MVC usage example
 
 This SDK can be used in Spring MVC projects.
 
@@ -53,18 +53,18 @@ public class Test {
 
 Replace `yourClientSecret` and `yourClientSecret` with the client ID and secret from your Sirv account: https://my.sirv.com/#/account/settings/api
 
-# Token
+## Token
 
 If the bearer authentication token has expired (after 20 minutes), the system will automatically request a new one.
 
 `sirvClient.getToken()` - get new token
 `sirvClient.isAlive()` - check if token is alive
 
-# Errors
+## Errors
 
 If the API returns an error, the SDK returns an exception with details about the error `SirvException class`.
 
-# Folder structure
+## Folder structure
 
 In this projects' folder structure, `sirvjavasdkcorecontains` contains the abstract SDK code, without integration with a specific REST client.
 
