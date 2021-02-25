@@ -68,15 +68,15 @@ If the API returns an error, the SDK returns an exception with details about the
 
 In this projects' folder structure, `sirvjavasdkcorecontains` contains the abstract SDK code, without integration with a specific REST client.
 
-`account` – Sirv account API
-`exception` – SDK exception
-`files` - Sirv files API
-`json` – JSON config
-`model` – authorization of API models
-`statistic` - Sirv statistic API
-`user` - Sirv user API
-`RestClient.java` – interface of REST client
-`SirvClient.java` – interface of Sirv client
-`SirvClientImpl.java` – implementation of Sirv client
+* `account` – Sirv account API
+* `exception` – SDK exception
+* `files` - Sirv files API
+* `json` – JSON config
+* `model` – authorization of API models
+* `statistic` - Sirv statistic API
+* `user` - Sirv user API
+* `RestClient.java` – interface of REST client
+* `SirvClient.java` – interface of Sirv client
+* `SirvClientImpl.java` – implementation of Sirv client
 
 The folder `sirvjavasdkspring` contains the implementation of `RestClient.java`, based upon the Spring _RestTemplate_.
