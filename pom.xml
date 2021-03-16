@@ -4,7 +4,7 @@
     <groupId>com.sirv</groupId>
     <artifactId>sirv-java-sdk</artifactId>
     <packaging>pom</packaging>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
     
     <name>Java SDK for Sirv REST API</name>
     <description>The Sirv REST API let's you perform more than 40 actions on your Sirv account, such as upload, search, delete, move, copy, fetch remote URL etc. REST API Documentation: https://apidocs.sirv.com/#getting-started</description>
@@ -66,7 +66,7 @@
         <url>https://github.com/sirv/sirv-rest-api-java</url>
         <connection>scm:git:ssh://git@github.com/sirv/sirv-rest-api-java.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/sirv/sirv-rest-api-java.git</developerConnection>
-        <tag>1.0</tag>
+        <tag>HEAD</tag>
     </scm>
     <build>
         <plugins>
