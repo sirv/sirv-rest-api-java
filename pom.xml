@@ -7,7 +7,7 @@
     <version>1.0-SNAPSHOT</version>
     
     <name>Java SDK for Sirv REST API</name>
-    <description>The Sirv REST API let's you perform more than 40 actions on your Sirv.com account, such as upload, search, delete, move, copy, fetch remote URL etc.</description>
+    <description>The Sirv REST API let's you perform more than 40 actions on your Sirv account, such as upload, search, delete, move, copy, fetch remote URL etc. REST API Documentation: https://apidocs.sirv.com/#getting-started</description>
     <url>https://sirv.com</url>
 
     <licenses>
@@ -15,7 +15,25 @@
             <name>MIT License</name>
             <url>http://www.opensource.org/licenses/mit-license.php</url>
         </license>
-    </licenses>    
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>igorshugurov</id>
+            <name>Igor</name>
+            <email>Shugurov</email>
+            <organization>Sirv</organization>
+            <organizationUrl>http://www.sirv.com/</organizationUrl>
+            <roles>
+                <role>developer</role>
+            </roles>
+            <timezone>+2</timezone>
+
+            <properties>
+                <picUrl>https://avatars.githubusercontent.com/u/58565782?s=460</picUrl>
+            </properties>
+        </developer>
+    </developers>        
 
     <modules>
         <module>sirvjavasdkspring</module>
