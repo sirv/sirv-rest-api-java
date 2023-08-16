@@ -13,7 +13,7 @@ To use this Java SDK, specify it as a project dependency in Maven:
   <dependency>
     <groupId>sirv.com</groupId>
     <artifactId>sirv-java-sdk-spring</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.2-SNAPSHOT</version>
   </dependency>
 </dependencies>
 ```
